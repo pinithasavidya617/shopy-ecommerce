@@ -1,1 +1,5 @@
-<p>features-component works!</p>
+<div class="features-container">
+  <ng-container *ngFor="let feature of features">
+    <app-feature-component [feature]="feature"></app-feature-component>
+  </ng-container>
+</div>

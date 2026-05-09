@@ -4,7 +4,7 @@
 
 .app-body{
   display: flex;
-  padding: 1rem;
+  padding: 20px;
 }
 
 .app-sidebar{
@@ -12,7 +12,7 @@
 }
 
 .app-content{
-
+  flex: 1;
 }
 
 .app-navbar{
@@ -21,10 +21,12 @@
 
 .app-hero{
   padding: 20px;
-  height: 200px;
+  height: 150px;
 }
 
 .app-features{
-  padding: 20px;
+  padding: 10px;
   height: 80px;
+  width: 100%;
 }
+

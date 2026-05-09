@@ -9,6 +9,7 @@ import { NavbarComponentComponent } from './components/navbar-component/navbar-c
 import { HeroComponentComponent } from './components/hero-component/hero-component.component';
 import { FeaturesComponentComponent } from './components/features-component/features-component.component';
 import { FeaturedProductsComponentComponent } from './components/featured-products-component/featured-products-component.component';
+import { FeatureComponentComponent } from './feature-component/feature-component.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FeaturedProductsComponentComponent } from './components/featured-produc
     NavbarComponentComponent,
     HeroComponentComponent,
     FeaturesComponentComponent,
-    FeaturedProductsComponentComponent
+    FeaturedProductsComponentComponent,
+    FeatureComponentComponent
   ],
   imports: [
     BrowserModule,
