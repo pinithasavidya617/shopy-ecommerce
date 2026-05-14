@@ -1,1 +1,22 @@
-<p>sidebar-component works!</p>
+<div class="sidebar-nav">
+  <div class="sidebar-nav-item">
+    <button routerLink="/" class="btn btn-primary">Home</button>
+  </div>
+  <div class="sidebar-nav-item">
+    <button routerLink="/products" class="btn btn-primary">Products</button>
+  </div>
+
+  <div class="sidebar-nav-item">
+    <button (click)="goToHome()" class="btn btn-primary">Home by TS</button>
+  </div>
+  <div class="sidebar-nav-item">
+    <button (click)="goToProducts()" class="btn btn-primary">Products by TS</button>
+  </div>
+
+  <div class="sidebar-nav-item">
+    <button (click)="goToPromotions()" class="btn btn-primary">Promotions by TS</button>
+  </div>
+
+
+</div>
+

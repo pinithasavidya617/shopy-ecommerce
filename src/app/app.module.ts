@@ -10,6 +10,11 @@ import { HeroComponentComponent } from './components/hero-component/hero-compone
 import { FeaturesComponentComponent } from './components/features-component/features-component.component';
 import { FeaturedProductsComponentComponent } from './components/featured-products-component/featured-products-component.component';
 import { FeatureComponentComponent } from './feature-component/feature-component.component';
+import {ProductModule} from "./product/product.module";
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { ProductComponent } from './pages/product/product.component';
+import { PromotionsComponent } from './pages/promotions/promotions.component';
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +25,24 @@ import { FeatureComponentComponent } from './feature-component/feature-component
     HeroComponentComponent,
     FeaturesComponentComponent,
     FeaturedProductsComponentComponent,
-    FeatureComponentComponent
+    FeatureComponentComponent,
+    // DashboardComponent,
+    // ProductsComponent,
+    PromotionsComponent,
+    ProductDetailsComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ProductModule
   ],
   providers: [],
+  exports: [
+    HeroComponentComponent,
+    FeaturesComponentComponent,
+    FeaturedProductsComponentComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
